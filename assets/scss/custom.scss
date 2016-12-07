@@ -1,0 +1,75 @@
+/* ------------------------------------
+    Header Styles
+------------------------------------- */
+* {
+  margin:0 auto;
+}
+
+h1 {
+    color: deepskyblue;
+    margin-top: 40px;
+}
+
+.wcalc {
+  width: 960px;
+  &__heading {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &__icons {
+    list-style: none;
+    padding: 0;
+    li {
+      background-color: #fff;
+      display: table-cell;
+      padding: 15px;
+      vertical-align: middle;
+      &:hover {
+        background-color: #508FD3;
+      }
+      &:hover .wcalc__heading {
+        color: #fff;
+      }
+    }
+  }
+  &__measures {
+    float: left;
+  }
+
+  &__size {
+    ul {
+      margin:20px 0;
+      width: 140px;
+      padding:10px;
+      padding-top:0;
+      list-style: none;
+      border:1px solid #ccc;
+      li {
+        font-size: 14px;
+        p {
+          padding-top:10px;
+          padding-bottom: 5px;
+          margin: 0;
+          color: #373A3C;
+        }
+        input {
+          border-radius:0;
+          border:1px solid #ccc;
+          padding-left:5px;
+        }
+        input[type="checkbox"] {
+          margin:5px;
+        }
+        span {
+          padding-left:30px;
+          font-size: 12px;
+          color: #ссс;
+        }
+      }
+    }
+  }
+  &__models {
+    margin-left: 160px;
+  }
+
+}

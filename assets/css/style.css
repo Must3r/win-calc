@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* ------------------------------------
+    Header Styles
+------------------------------------- */
+* {
+  margin: 0 auto; }
+
+h1 {
+  color: deepskyblue;
+  margin-top: 40px; }
+
+.wcalc {
+  width: 960px; }
+  .wcalc__heading {
+    font-size: 18px;
+    font-weight: bold; }
+  .wcalc__icons {
+    list-style: none;
+    padding: 0; }
+    .wcalc__icons li {
+      background-color: #fff;
+      display: table-cell;
+      padding: 15px;
+      vertical-align: middle; }
+      .wcalc__icons li:hover {
+        background-color: #508FD3; }
+      .wcalc__icons li:hover .wcalc__heading {
+        color: #fff; }
+  .wcalc__measures {
+    float: left; }
+  .wcalc__size ul {
+    margin: 20px 0;
+    width: 140px;
+    padding: 10px;
+    padding-top: 0;
+    list-style: none;
+    border: 1px solid #ccc; }
+    .wcalc__size ul li {
+      font-size: 14px; }
+      .wcalc__size ul li p {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        margin: 0;
+        color: #373A3C; }
+      .wcalc__size ul li input {
+        border-radius: 0;
+        border: 1px solid #ccc;
+        padding-left: 5px; }
+      .wcalc__size ul li input[type="checkbox"] {
+        margin: 5px; }
+      .wcalc__size ul li span {
+        padding-left: 30px;
+        font-size: 12px;
+        color: #ссс; }
+  .wcalc__models {
+    margin-left: 160px; }
+
+p {
+  color: rebeccapurple; }
