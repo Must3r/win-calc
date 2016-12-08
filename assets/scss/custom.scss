@@ -72,4 +72,142 @@ h1 {
     margin-left: 160px;
   }
 
+  &__box {
+    position: relative;
+    display:block;
+    margin:0;
+    &--1 {
+      display:block;
+      width:180px;
+      background: url('../images/f1.png') no-repeat center;
+      background-size: cover;
+    }
+    &--2 {
+      display:block;
+      width: 350px;
+      background: url('../images/f2.png') no-repeat center;
+      background-size: 100%;
+    }
+  }
+
+  &__frame {
+    margin:20px 0;
+    height: 340px;
+    img {
+      opacity:0;
+      padding:8px 0;
+      padding-left: 10px;
+      transition: all .5s ease 0s;
+    }
+  }
+
+  &__option {
+    position: absolute;
+    background-color: #fff;
+    width:100px;
+    left: 40px;
+    top: 60px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index:2;
+    p {
+      font-size: 10px;
+      margin: 0;
+      padding:5px 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:hover {
+        background-color: #3B7EB5;
+        color: #fff;
+      }
+
+    }
+  }
+
+}
+
+.active {
+  opacity:1 !important;
+}
+
+.checked {
+  background-color: #3B7EB5;
+  color: #fff;
+}
+
+.noframe {
+  display: none;
+}
+
+.left-float {
+  float: left;
+}
+
+.effect {
+  &-1 {
+    transform: perspective(800px) rotateY(0deg);
+    transform-origin: 100% 50% 0px;
+    animation-name:effect-one;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+  }
+  &-1-reverse {
+    transform: perspective(800px) rotateY(0deg);
+    transform-origin: 0 50% 0;
+    animation-name:effect-one-reverse;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+  }
+  &-2 {
+    transform: perspective(300px) rotateX(0deg);
+    transform-origin: 50% 70% 0px;
+    animation-name:effect-two;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+  }
+  &-2-reverse {
+    transform: perspective(300px) rotateX(0deg);
+    transform-origin: 50% 70% 0px;
+    animation-name:effect-two-reverse;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+  }
+}
+
+@keyframes effect-one {
+    0%   {transform: perspective(800px) rotateY(0deg);}
+    13%  {transform: perspective(800px) rotateY(35deg);}
+    26% {transform: perspective(800px) rotateY(0deg);}
+    100% {transform: perspective(800px) rotateY(0deg);}
+}
+
+@keyframes effect-one-reverse {
+    0%   {transform: perspective(800px) rotateY(0deg);}
+    13%  {transform: perspective(800px) rotateY(-35deg);}
+    26% {transform: perspective(800px) rotateY(0deg);}
+    100% {transform: perspective(800px) rotateY(0deg);}
+}
+
+@keyframes effect-two {
+    0%   {transform: perspective(800px) rotateY(0deg); transform-origin: 100% 50% 0px;}
+    10%  {transform: perspective(800px) rotateY(35deg); transform-origin: 100% 50% 0px;}
+    20% {transform: perspective(800px) rotateY(0deg); transform-origin: 100% 50% 0px;}
+    21% {transform: perspective(400px) rotateX(0deg);}
+    30% {transform: perspective(400px) rotateX(-3deg);}
+    40% {transform: perspective(400px) rotateX(0deg);}
+    100% {transform: perspective(800px) rotateY(0deg); transform-origin: 100% 50% 0px;}
+}
+
+@keyframes effect-two-reverse {
+    0%   {transform: perspective(800px) rotateY(0deg); transform-origin: 0 50% 0px;}
+    10%  {transform: perspective(800px) rotateY(-35deg); transform-origin: 0 50% 0px;}
+    20% {transform: perspective(800px) rotateY(0deg); transform-origin: 0 50% 0px;}
+    21% {transform: perspective(400px) rotateX(0deg);}
+    30% {transform: perspective(400px) rotateX(-3deg);}
+    40% {transform: perspective(400px) rotateX(0deg);}
+    100% {transform: perspective(800px) rotateY(0deg); transform-origin: 0 50% 0px;}
 }
