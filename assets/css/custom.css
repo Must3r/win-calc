@@ -69,7 +69,6 @@ h1 {
       background: url("../images/f2.png") no-repeat center;
       background-size: 100%; }
   .wcalc__frame {
-    margin: 20px 0;
     height: 340px; }
     .wcalc__frame img {
       opacity: 0;
