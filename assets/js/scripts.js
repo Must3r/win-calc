@@ -1,8 +1,4 @@
-$(document).ready(function() {
-  $('.wcalc__icons .wcalc__icon--1').on('click', function() {
-    $('.wcalc__box--1 ').removeClass('noframe');
-
-  });
+$(document).ready(function() {  
 
   /* wcalc__frame--1 */
   var a = $('.wcalc__frame--1 img');
