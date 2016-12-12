@@ -1,42 +1,66 @@
-$(document).ready(function() {  
+$(document).ready(function() {
+// announcing the variables
+    var picImg = $('.wcalc__frame .pic'),
+        picImgRev = $('.wcalc__frame .pic-rev'),
+        picImgSec = $('.wcalc__frame .pic-sec'),
+        picImgThird = $('.wcalc__frame .pic-third'),
+        trigger = $('.wcalc__option p'),
+        allClasses = 'active effect-1 effect-2 effect-1-reverse effect-2-reverse effect-3';
 
-  /* wcalc__frame--1 */
-  var a = $('.wcalc__frame--1 img');
+    $('.wcalc__icons .gal-icon').on('click', function() {
+      var panelToShow = $(this).attr('rel');
 
-  $('.wcalc__option p').on('click', function() {
-    $('.wcalc__option p.checked').removeClass('checked');
-    $(this).addClass('checked');
-  });
-  $('.closed').on('click', function() {
-    a.removeClass('active effect-1 effect-2');
-  });
-  $('.turn-around').on('click', function() {
-    a.removeClass('effect-2');
-    a.addClass('active effect-1');
-  });
-  $('.turn-up').on('click', function() {
-    a.removeClass('effect-1');
-    a.addClass('active effect-2');
-  });
+      $('.gal-icon.checked').removeClass('checked');
+      $(this).addClass('checked');
 
-  /* wcalc__frame--2 */
-  var b = $('.wcalc__frame--2 img');
+      $('.wcalc__box.isframe').removeClass('isframe');
+      $('.'+panelToShow).addClass('isframe');
+      $('.wcalc__frame img').removeClass(allClasses);
+    })
 
-  $('.wcalc__option p').on('click', function() {
-    $('.wcalc__option p.checked').removeClass('checked');
-    $(this).addClass('checked');
-  });
-  $('.closed').on('click', function() {
-    b.removeClass('active effect-1-reverse effect-2-reverse');
-  });
-  $('.turn-around').on('click', function() {
-    b.removeClass('effect-2-reverse');
-    b.addClass('active effect-1-reverse');
-  });
-  $('.turn-up').on('click', function() {
-    b.removeClass('effect-1-reverse');
-    b.addClass('active effect-2-reverse');
-  });
-
+    trigger.on('click', function() {
+        $('.checked').removeClass('checked');
+        $(this).addClass('checked');
+    });
+    $('.closed').on('click', function() {
+        picImg.removeClass(allClasses);
+    });
+    $('.closed-sec').on('click', function() {
+        picImgSec.removeClass(allClasses);
+    });
+    $('.closed-rev').on('click', function() {
+        picImgRev.removeClass(allClasses);
+    });
+    $('.closed-third').on('click', function() {
+        picImgThird.removeClass(allClasses);
+    });
+    $('.turn-left').on('click', function() {
+        picImgRev.removeClass(allClasses);
+        picImgRev.addClass('active effect-1-reverse');
+    });
+    $('.turn-left-sec').on('click', function() {
+        picImgSec.removeClass(allClasses);
+        picImgSec.addClass('active effect-1-reverse');
+    });
+    $('.turn-right').on('click', function() {
+        picImg.removeClass(allClasses);
+        picImg.addClass('active effect-1');
+    });
+    $('.turn-down').on('click', function() {
+        picImg.removeClass(allClasses);
+        picImg.addClass('active effect-2');
+    });
+    $('.turn-down-rev').on('click', function() {
+        picImgRev.removeClass(allClasses);
+        picImgRev.addClass('active effect-2-reverse');
+    });
+    $('.turn-down-sec').on('click', function() {
+        picImgSec.removeClass(allClasses);
+        picImgSec.addClass('active effect-2-reverse');
+    });
+    $('.turn-down-third').on('click', function() {
+        picImgThird.removeClass(allClasses);
+        picImgThird.addClass('active effect-3');
+    });
 
 });
