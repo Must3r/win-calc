@@ -18,7 +18,7 @@
     <!--<link rel="stylesheet" href="assets/css/custom.min.css">
     <link rel="stylesheet" href="assets/css/media-screens.min.css">-->
     <link rel="stylesheet" href="assets/css/style.min.css">
-
+    <link rel="stylesheet" href="node_modules/nouislider/distribute/nouislider.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,175 +31,190 @@
 <body>
 
     <div class="wcalc">
-      <ul class="wcalc__icons">
-        <li><h4 class="wcalc__heading">Тип<br>окна</h4></li>
-        <li rel="wcalc__box--1" class="checked-icon gal-icon wcalc-icon--1">
-          <img src="assets/images/fn1.png" alt="">
-        </li>
-        <li rel="wcalc__box--2" class="gal-icon wcalc-icon--2">
-          <img src="assets/images/fn2.png" alt="">
-        </li>
-        <li rel="wcalc__box--3" class="gal-icon wcalc-icon--3">
-          <img src="assets/images/fn3.png" alt="">
-        </li>
-        <li rel="wcalc__box--4" class="gal-icon wcalc-icon--4">
-          <img src="assets/images/fn4.png" alt="">
-        </li>
-        <li rel="wcalc__box--5" class="gal-icon wcalc-icon--5">
-          <img src="assets/images/fn5.png" alt="">
-        </li>
-        <li rel="wcalc__box--6" class="gal-icon wcalc-icon--6">
-          <img src="assets/images/fn6.png" alt="">
-        </li>
-      </ul>
-      <div class="wcalc__measures">
-        <div class="wcalc__size">
-          <h4 class="wcalc__heading">Размеры</h4>
-          <ul>
+        <ul class="wcalc__icons">
             <li>
-              <form action="">
-                <p>Высота</p>
-                <input type="text" size="4" name="" value="">&nbsp мм
-                <p>Ширина</p>
-                <input type="text" size="4" name="" value="">&nbsp мм
-              </form>
+                <h4 class="wcalc__heading">Тип<br>окна</h4></li>
+            <li rel="wcalc__box--1" class="checked-icon gal-icon wcalc-icon--1">
+                <img src="assets/images/fn1.png" alt="">
             </li>
-          </ul>
-          <ul>
-            <li>
-              <form action="">
-                <p><input type="checkbox" name="" id=""><b>Монтаж</b><br>
-                  <span>+3462 руб.</span></p>
-                <p><input type="checkbox" name="" id=""><b>Подоконник</b><br>
-                  <span>+1559 руб.</span></p>
-                <p><input type="checkbox" name="" id=""><b>Откосы</b><br>
-                  <span>+2702 руб.</span></p>
-              </form>
+            <li rel="wcalc__box--2" class="gal-icon wcalc-icon--2">
+                <img src="assets/images/fn2.png" alt="">
             </li>
-          </ul>
+            <li rel="wcalc__box--3" class="gal-icon wcalc-icon--3">
+                <img src="assets/images/fn3.png" alt="">
+            </li>
+            <li rel="wcalc__box--4" class="gal-icon wcalc-icon--4">
+                <img src="assets/images/fn4.png" alt="">
+            </li>
+            <li rel="wcalc__box--5" class="gal-icon wcalc-icon--5">
+                <img src="assets/images/fn5.png" alt="">
+            </li>
+            <li rel="wcalc__box--6" class="gal-icon wcalc-icon--6">
+                <img src="assets/images/fn6.png" alt="">
+            </li>
+        </ul>
+        <div class="wcalc__measures">
+            <div class="wcalc__size">
+                <h4 class="wcalc__heading">Размеры</h4>
+                <ul>
+                    <li>
+                        <form action="">
+                            <p>Высота</p>
+                            <input type="text" size="4" name="" value="">&nbsp мм
+                            <p>Ширина</p>
+                            <input type="text" size="4" name="" value="">&nbsp мм
+                        </form>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <form action="">
+                            <p><label><input type="checkbox" name="" id=""><b>Монтаж</b><br>
+                  <span>+3462 руб.</span></label></p>
+                            <p><label><input type="checkbox" name="" id=""><b>Подоконник</b><br>
+                  <span>+1559 руб.</span></label></p>
+                            <p><label><input type="checkbox" name="" id=""><b>Откосы</b><br>
+                  <span>+2702 руб.</span></label></p>
+                        </form>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="wcalc__models">
-        <h4 class="wcalc__heading">
-          Тип открывания
-        </h4>
+        <div class="wcalc__models">
+            <h4 class="wcalc__heading">Тип открывания</h4>
 
-        <div class="wcalc__box wcalc__box--1 isframe">
-          <div class="wcalc__frame wcalc__frame--1">
-            <img class="pic" src="assets/images/f42.png" alt="">
-            <div class="wcalc__option wcalc__option--1">
-              <p class="closed checked">глухое</p>
-              <p class="turn-right">поворотное</p>
-              <p class="turn-down">поворотно-откидное</p>
+            <div class="noUiSlider-one left-float">
+                <div id="slider-v-one" class="noUiSlider-content noframe">
+                </div>
+                <div id="slider-v-two" class="noUiSlider-content noframe">
+                </div>
+                <div id="slider-v-three" class="noUiSlider-content">
+                </div>
             </div>
-          </div>
+
+            <div class="wcalc__box wcalc__box--1 isframe">
+                <div class="wcalc__frame wcalc__frame--1">
+                    <img class="pic" src="assets/images/f42.png" alt="">
+                    <div class="wcalc__option wcalc__option--1">
+                        <p class="closed checked">глухое</p>
+                        <p class="turn-right">поворотное</p>
+                        <p class="turn-down">поворотно-откидное</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wcalc__box wcalc__box--2">
+                <div class="wcalc__frame wcalc__frame--2 left-float">
+                    <img class="pic-rev" src="assets/images/f41.png" alt="">
+                    <div class="wcalc__option wcalc__option--1">
+                        <p class="closed-rev checked">глухое</p>
+                        <p class="turn-left">поворотное</p>
+                        <p class="turn-down-rev">поворотно-откидное</p>
+                    </div>
+                </div>
+                <div class="wcalc__frame wcalc__frame--1">
+                    <img class="pic" src="assets/images/f42.png" alt="">
+                    <div class="wcalc__option wcalc__option--2">
+                        <p class="closed checked">глухое</p>
+                        <p class="turn-right">поворотное</p>
+                        <p class="turn-down">поворотно-откидное</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wcalc__box wcalc__box--3">
+                <div class="wcalc__frame wcalc__frame--3">
+                    <img class="pic-third" src="assets/images/f33.png" alt="">
+                    <div class="wcalc__option wcalc__option--1">
+                        <p class="closed-third checked">глухое</p>
+                        <p class="turn-down-third">поворотное</p>
+                    </div>
+                </div>
+                <div class="wcalc__frame wcalc__frame--2 left-float">
+                    <img class="pic-rev" src="assets/images/f31.png" alt="">
+                    <div class="wcalc__option wcalc__option--1">
+                        <p class="closed-rev checked">глухое</p>
+                        <p class="turn-left">поворотное</p>
+                        <p class="turn-down-rev">поворотно-откидное</p>
+                    </div>
+                </div>
+                <div class="wcalc__frame wcalc__frame--1">
+                    <img class="pic" src="assets/images/f32.png" alt="">
+                    <div class="wcalc__option wcalc__option--2">
+                        <p class="closed checked">глухое</p>
+                        <p class="turn-right">поворотное</p>
+                        <p class="turn-down">поворотно-откидное</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wcalc__box wcalc__box--4">
+                <div class="wcalc__frame wcalc__frame--2 left-float">
+                    <img class="pic-rev" src="assets/images/f41.png" alt="">
+                    <div class="wcalc__option wcalc__option--1">
+                        <p class="closed-rev checked" class="checked">глухое</p>
+                        <p class="turn-left">поворотное</p>
+                        <p class="turn-down-rev">поворотно-откидное</p>
+                    </div>
+                </div>
+                <div class="wcalc__frame wcalc__frame--2 left-float">
+                    <img class="pic-sec" src="assets/images/f41.png" alt="">
+                    <div class="wcalc__option wcalc__option--2">
+                        <p class="closed-sec checked">глухое</p>
+                        <p class="turn-left-sec">поворотное</p>
+                        <p class="turn-down-sec">поворотно-откидное</p>
+                    </div>
+                </div>
+                <div class="wcalc__frame wcalc__frame--1">
+                    <img class="pic" src="assets/images/f42.png" alt="">
+                    <div class="wcalc__option wcalc__option--2">
+                        <p class="closed checked">глухое</p>
+                        <p class="turn-right">поворотное</p>
+                        <p class="turn-down">поворотно-откидное</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wcalc__box wcalc__box--5">
+            </div>
+
+            <div class="wcalc__box wcalc__box--6">
+                <div class="wcalc__frame wcalc__frame--2 left-float">
+                    <img class="pic-rev" src="assets/images/f31.png" alt="">
+                    <div class="wcalc__option wcalc__option--1">
+                        <p class="closed-rev checked">глухое</p>
+                        <p class="turn-left">поворотное</p>
+                        <p class="turn-down-rev">поворотно-откидное</p>
+                    </div>
+                </div>
+                <div class="wcalc__frame wcalc__frame--1">
+                    <img class="pic" src="assets/images/f32.png" alt="">
+                    <div class="wcalc__option wcalc__option--3">
+                        <p class="closed checked">глухое</p>
+                        <p class="turn-right">поворотное</p>
+                        <p class="turn-down">поворотно-откидное</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="noUiSlider-two">
+                <div id="slider-h-one" class="left-float">
+                </div>
+            </div>
+
         </div>
-
-        <div class="wcalc__box wcalc__box--2">
-          <div class="wcalc__frame wcalc__frame--2 left-float">
-            <img class="pic-rev" src="assets/images/f41.png" alt="">
-            <div class="wcalc__option wcalc__option--1">
-              <p class="closed-rev checked">глухое</p>
-              <p class="turn-left">поворотное</p>
-              <p class="turn-down-rev">поворотно-откидное</p>
-            </div>
-          </div>
-          <div class="wcalc__frame wcalc__frame--1">
-            <img class="pic" src="assets/images/f42.png" alt="">
-            <div class="wcalc__option wcalc__option--2">
-              <p class="closed checked">глухое</p>
-              <p class="turn-right">поворотное</p>
-              <p class="turn-down">поворотно-откидное</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="wcalc__box wcalc__box--3">
-          <div class="wcalc__frame wcalc__frame--3">
-            <img class="pic-third" src="assets/images/f33.png" alt="">
-            <div class="wcalc__option wcalc__option--1">
-              <p class="closed-third checked">глухое</p>
-              <p class="turn-down-third">поворотное</p>
-            </div>
-          </div>
-          <div class="wcalc__frame wcalc__frame--2 left-float">
-            <img class="pic-rev" src="assets/images/f31.png" alt="">
-            <div class="wcalc__option wcalc__option--1">
-              <p class="closed-rev checked">глухое</p>
-              <p class="turn-left">поворотное</p>
-              <p class="turn-down">поворотно-откидное</p>
-            </div>
-          </div>
-          <div class="wcalc__frame wcalc__frame--1">
-            <img class="pic" src="assets/images/f32.png" alt="">
-            <div class="wcalc__option wcalc__option--2">
-              <p class="closed checked">глухое</p>
-              <p class="turn-right">поворотное</p>
-              <p class="turn-down">поворотно-откидное</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="wcalc__box wcalc__box--4">
-          <div class="wcalc__frame wcalc__frame--2 left-float">
-            <img class="pic-rev" src="assets/images/f41.png" alt="">
-            <div class="wcalc__option wcalc__option--1">
-              <p class="closed-rev checked" class="checked">глухое</p>
-              <p class="turn-left">поворотное</p>
-              <p class="turn-down">поворотно-откидное</p>
-            </div>
-          </div>
-          <div class="wcalc__frame wcalc__frame--2 left-float">
-            <img class="pic-sec" src="assets/images/f41.png" alt="">
-            <div class="wcalc__option wcalc__option--2">
-              <p class="closed-sec checked">глухое</p>
-              <p class="turn-left-sec">поворотное</p>
-              <p class="turn-down-sec">поворотно-откидное</p>
-            </div>
-          </div>
-          <div class="wcalc__frame wcalc__frame--1">
-            <img class="pic" src="assets/images/f42.png" alt="">
-            <div class="wcalc__option wcalc__option--2">
-              <p class="closed checked">глухое</p>
-              <p class="turn-right">поворотное</p>
-              <p class="turn-down">поворотно-откидное</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="wcalc__box wcalc__box--5">
-
-        </div>
-
-        <div class="wcalc__box wcalc__box--6">
-          <div class="wcalc__frame wcalc__frame--2 left-float">
-            <img class="pic-rev" src="assets/images/f31.png" alt="">
-            <div class="wcalc__option wcalc__option--1">
-              <p class="closed-rev checked">глухое</p>
-              <p class="turn-left">поворотное</p>
-              <p class="turn-down">поворотно-откидное</p>
-            </div>
-          </div>
-          <div class="wcalc__frame wcalc__frame--1">
-            <img class="pic" src="assets/images/f32.png" alt="">
-            <div class="wcalc__option wcalc__option--3">
-              <p class="closed checked">глухое</p>
-              <p class="turn-right">поворотное</p>
-              <p class="turn-down">поворотно-откидное</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/nouislider/distribute/nouislider.min.js"></script>
 
     <!-- Scripts JS -->
+
     <script src="assets/js/scripts.js"></script>
 
 </body>

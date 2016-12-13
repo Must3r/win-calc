@@ -34,5 +34,9 @@
     "jquery": "^2.2.4",
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.0.0"
+  },
+  "dependencies": {
+    "nouislider": "^9.1.0",
+    "rangeslider.js": "^2.3.0"
   }
 }

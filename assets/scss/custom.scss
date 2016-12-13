@@ -26,6 +26,7 @@ h1 {
       vertical-align: middle;
       &:hover {
         background-color: #508FD3;
+        cursor: pointer;
       }
       &:hover .wcalc__heading {
         color: #fff;
@@ -75,6 +76,8 @@ h1 {
   &__box {
     display:none;
     margin:0;
+    margin-top: 40px;
+    margin-left: 80px;
     height: 360px;
     &--1 {
       padding-top:16px;
@@ -167,7 +170,6 @@ h1 {
       top: 25px;
     }
   }
-
 }
 
 .active {
@@ -175,13 +177,17 @@ h1 {
 }
 
 .checked {
-  background-color: #3B7EB5 !important;
+  background-color: #3B7EB5;
   color: #fff;
   &:before {
     position: absolute;
     left:4px;
     content: "\27a4";
   }
+}
+
+.checked-icon {
+  background-color: #3B7EB5 !important;
 }
 
 .isframe {
@@ -278,4 +284,27 @@ h1 {
     13% {transform: perspective(800px) rotateX(-24deg);}
     26% {transform: perspective(800px) rotateX(0deg);}
     100% {transform: perspective(800px) rotateX(0deg);}
+}
+
+
+//custom styles to "noUiSlider"
+.noUiSlider-one {
+  .noUiSlider-content {
+    margin-top:20px;
+    height:360px;
+    width: 18px;
+  }
+  .noUi-pips-vertical {
+    transform: rotateY(180deg) rotateZ(180deg);
+    .noUi-value-large {
+      transform: rotateY(0deg) rotateX(180deg);
+    }
+  }
+}
+
+.noUiSlider-two {
+  #slider-h-one {
+    margin-left:80px;
+    width: 200px;
+  }
 }
