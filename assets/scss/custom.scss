@@ -24,6 +24,7 @@ h1 {
       display: table-cell;
       padding: 15px;
       vertical-align: middle;
+      border:1px solid #ccc;
       &:hover {
         background-color: #508FD3;
         cursor: pointer;
@@ -292,7 +293,6 @@ h1 {
   .noUiSlider-content {
     margin-top:20px;
     height:360px;
-    width: 18px;
   }
   .noUi-pips-vertical {
     transform: rotateY(180deg) rotateZ(180deg);
@@ -303,7 +303,7 @@ h1 {
 }
 
 .noUiSlider-two {
-  #slider-h-one {
+  #slider2 {
     margin-left:80px;
     width: 200px;
   }

@@ -63,9 +63,13 @@ $(document).ready(function() {
         picImgThird.addClass('active effect-3');
     });
 
-    var sliderVone = document.getElementById('slider-v-one');
+    var slider1 = document.getElementById('slider1'),
+        slider2 = document.getElementById('slider2'),
+        slider3 = document.getElementById('slider3'),
+        slider4 = document.getElementById('slider4'),
+        slider5 = document.getElementById('slider5');
 
-    noUiSlider.create(sliderVone, {
+    noUiSlider.create(slider1, {
         start: [1650],
         orientation: "vertical",
         step: 10,
@@ -79,8 +83,6 @@ $(document).ready(function() {
             density: 2
         }
     });
-
-    var slider2 = document.getElementById('slider2');
 
     noUiSlider.create(slider2, {
         start: [1000],
@@ -96,9 +98,7 @@ $(document).ready(function() {
         }
     });
 
-    var sliderVtwo = document.getElementById('slider-v-two');
-
-    noUiSlider.create(sliderVtwo, {
+    noUiSlider.create(slider3, {
         start: [1500],
         orientation: "vertical",
         step: 10,
@@ -112,8 +112,6 @@ $(document).ready(function() {
             density: 2
         }
     });
-
-    var slider4 = document.getElementById('slider4');
 
     noUiSlider.create(slider4, {
         start: [1000],
@@ -129,9 +127,7 @@ $(document).ready(function() {
         }
     });
 
-    var sliderVthree = document.getElementById('slider-v-three');
-
-    noUiSlider.create(sliderVthree, {
+    noUiSlider.create(slider5, {
         start: [950],
         orientation: "vertical",
         step: 10,
