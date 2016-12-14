@@ -13,6 +13,8 @@ h1 {
 .wcalc {
   width: 960px; }
   .wcalc__heading {
+    margin: 0;
+    padding: 10px 0;
     font-size: 18px;
     font-weight: bold; }
   .wcalc__icons {
@@ -158,7 +160,7 @@ h1 {
   animation-name: effect-one;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-delay: .5s; }
+  animation-delay: .2s; }
 
 .effect-1-reverse {
   transform: perspective(800px) rotateY(0deg);
@@ -166,7 +168,7 @@ h1 {
   animation-name: effect-one-reverse;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-delay: .5s; }
+  animation-delay: .2s; }
 
 .effect-2 {
   transform: perspective(300px) rotateX(0deg);
@@ -174,7 +176,7 @@ h1 {
   animation-name: effect-two;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-delay: .5s; }
+  animation-delay: .2s; }
 
 .effect-2-reverse {
   transform: perspective(300px) rotateX(0deg);
@@ -182,7 +184,7 @@ h1 {
   animation-name: effect-two-reverse;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-delay: .5s; }
+  animation-delay: .2s; }
 
 .effect-3 {
   transform: perspective(300px) rotateX(0deg);
@@ -190,7 +192,7 @@ h1 {
   animation-name: effect-three;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-delay: .5s; }
+  animation-delay: .2s; }
 
 @keyframes effect-one {
   0% {

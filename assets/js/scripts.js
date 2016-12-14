@@ -16,6 +16,7 @@ $(document).ready(function() {
       $('.wcalc__box.isframe').removeClass('isframe');
       $('.'+panelToShow).addClass('isframe');
       $('.wcalc__frame img').removeClass(allClasses);
+
     })
 
     trigger.on('click', function() {
@@ -158,6 +159,44 @@ $(document).ready(function() {
 
     .slider("pips", {
         step: "10"
+    });
+
+    //slider events
+
+    $('.wcalc__icons .wcalc-icon--1').on('click', function() {
+      $('.slider').addClass('noframe');
+      $('#sliderVone').removeClass('noframe');
+      $('#sliderHone').removeClass('noframe');
+    });
+
+    $('.wcalc__icons .wcalc-icon--2').on('click', function() {
+      $('.slider').addClass('noframe');
+      $('#sliderVone').removeClass('noframe');
+      $('#sliderHtwo').removeClass('noframe');
+    });
+
+    $('.wcalc__icons .wcalc-icon--3').on('click', function() {
+      $('.slider').addClass('noframe');
+      $('#sliderVtwo').removeClass('noframe');
+      $('#sliderHtwo').removeClass('noframe');
+    });
+
+    $('.wcalc__icons .wcalc-icon--4').on('click', function() {
+      $('.slider').addClass('noframe');
+      $('#sliderVone').removeClass('noframe');
+      $('#sliderHthree').removeClass('noframe');
+    });
+
+    $('.wcalc__icons .wcalc-icon--5').on('click', function() {
+      $('.slider').addClass('noframe');
+      $('#sliderVthree').removeClass('noframe');
+      $('#sliderHfour').removeClass('noframe');
+    });
+
+    $('.wcalc__icons .wcalc-icon--6').on('click', function() {
+      $('.slider').addClass('noframe');
+      $('#sliderVthree').removeClass('noframe');
+      $('#sliderHfive').removeClass('noframe');
     });
 
 });
