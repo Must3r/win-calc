@@ -14,7 +14,7 @@
   "license": "",
   "homepage": "http://react-logic.com",
   "devDependencies": {
-    "bootstrap": "^4.0.0-alpha.5",
+    "bootstrap": "^3.3.7",
     "browser-sync": "^2.11.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",

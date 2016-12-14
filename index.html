@@ -9,10 +9,14 @@
 
     <title>Browser-Sync Starter</title>
 
-    <!-- Bootstrap 4 -->
+    <!-- Bootstrap 3 -->
     <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">-->
+    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- JQueryUI -->
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/flick/jquery-ui.min.css">
+    <link rel="stylesheet" href="bower_components/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.min.css">
 
     <!-- Custom && Media-Screens -->
     <!--<link rel="stylesheet" href="assets/css/custom.min.css">
@@ -83,6 +87,10 @@
         <h4 class="wcalc__heading">
           Тип открывания
         </h4>
+
+        <div id="sliderVone" class="left-float noframe"></div>
+        <div id="sliderVtwo" class="left-float noframe"></div>
+        <div id="sliderVthree" class="left-float"></div>
 
         <div class="wcalc__box wcalc__box--1 isframe">
           <div class="wcalc__frame wcalc__frame--1">
@@ -190,14 +198,23 @@
           </div>
         </div>
 
+      <div id="sliderHone" class="noframe"></div>
+      <div id="sliderHtwo" class="noframe"></div>
+      <div id="sliderHthree" class="noframe"></div>
+      <div id="sliderHfour" class="noframe"></div>
+      <div id="sliderHfive"></div>
+
       </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.min.js"></script>
+    <!-- include the jQuery and jQuery UI scripts -->
+
 
     <!-- Scripts JS -->
     <script src="assets/js/scripts.js"></script>

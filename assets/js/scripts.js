@@ -63,4 +63,101 @@ $(document).ready(function() {
         picImgThird.addClass('active effect-3');
     });
 
+//slider code
+
+    //vertical sliders
+
+    $("#sliderVone")
+
+    .slider({
+        min: 1000,
+        max: 1650,
+        orientation: "vertical"
+    })
+
+    .slider("pips", {
+        step: "10"
+    });
+
+    $("#sliderVtwo")
+
+    .slider({
+        min: 1500,
+        max: 2200,
+        orientation: "vertical"
+    })
+
+    .slider("pips", {
+        step: "10"
+    });
+
+    $("#sliderVthree")
+
+    .slider({
+        min: 950,
+        max: 2200,
+        orientation: "vertical"
+    })
+
+    .slider("pips", {
+        step: "10"
+    });
+
+    //horizontal sliders
+
+    $("#sliderHone")
+
+    .slider({
+        min: 400,
+        max: 1400
+      })
+
+    .slider("pips", {
+        step: "20"
+    });
+
+    $("#sliderHtwo")
+
+    .slider({
+        min: 1000,
+        max: 1700
+      })
+
+    .slider("pips", {
+        step: "10"
+    });
+
+    $("#sliderHthree")
+
+    .slider({
+        min: 1700,
+        max: 2700
+      })
+
+    .slider("pips", {
+        step: "10"
+    });
+
+    $("#sliderHfour")
+
+    .slider({
+        min: 600,
+        max: 850
+      })
+
+    .slider("pips", {
+        step: "10"
+    });
+
+    $("#sliderHfive")
+
+    .slider({
+        min: 1850,
+        max: 2400
+      })
+
+    .slider("pips", {
+        step: "10"
+    });
+
 });
