@@ -18,13 +18,16 @@ h1 {
     font-size: 18px;
     font-weight: bold; }
   .wcalc__icons {
+    display: table;
+    border-collapse: collapse;
     list-style: none;
     padding: 0; }
     .wcalc__icons li {
       background-color: #fff;
       display: table-cell;
       padding: 15px;
-      vertical-align: middle; }
+      vertical-align: middle;
+      border: 1px solid #ccc; }
       .wcalc__icons li:hover {
         background-color: #508FD3; }
       .wcalc__icons li:hover .wcalc__heading {
@@ -133,6 +136,17 @@ h1 {
     .wcalc__option--3 {
       left: 200px;
       top: 25px; }
+  .wcalc__profile {
+    float: right; }
+  .wcalc__profcontainer {
+    border: 1px solid #ccc;
+    border-collapse: collapse; }
+  .wcalc__profitem {
+    font-size: 18px; }
+    .wcalc__profitem span, .wcalc__profitem div {
+      padding: 15px 20px; }
+  .wcalc__description-call {
+    display: inline-block; }
 
 .active {
   opacity: 1 !important; }
@@ -153,6 +167,18 @@ h1 {
 
 .left-float {
   float: left; }
+
+.colour--grey {
+  color: #9496AB; }
+
+.colour--blue {
+  color: #06B8F8; }
+
+.colour--green {
+  color: #B9D442; }
+
+.colour--orange {
+  color: #FAAA24; }
 
 .effect-1 {
   transform: perspective(800px) rotateY(0deg);

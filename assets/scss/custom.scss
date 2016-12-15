@@ -20,6 +20,8 @@ h1 {
     font-weight: bold;
   }
   &__icons {
+    display: table;
+    border-collapse: collapse;
     list-style: none;
     padding: 0;
     li {
@@ -27,6 +29,7 @@ h1 {
       display: table-cell;
       padding: 15px;
       vertical-align: middle;
+      border: 1px solid #ccc;
       &:hover {
         background-color: #508FD3;
       }
@@ -173,6 +176,26 @@ h1 {
     }
   }
 
+  &__profile {
+    float: right;
+  }
+
+  &__profcontainer {
+    border:1px solid #ccc;
+    border-collapse: collapse;
+  }
+
+  &__profitem {
+    font-size: 18px;
+    span, div {
+      padding: 15px 20px;
+    }
+  }
+
+  &__description-call {
+    display: inline-block;
+  }
+
 }
 
 .active {
@@ -199,6 +222,21 @@ h1 {
 
 .left-float {
   float: left;
+}
+
+.colour {
+  &--grey {
+    color: #9496AB;
+  }
+  &--blue {
+    color: #06B8F8;
+  }
+  &--green {
+    color: #B9D442;
+  }
+  &--orange {
+    color: #FAAA24;
+  }
 }
 
 .effect {
