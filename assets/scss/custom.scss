@@ -181,19 +181,260 @@ h1 {
   }
 
   &__profcontainer {
+    display: table;
+    position: relative;
+    background-color: #fff;
+    margin: 20px;
+    margin-left: 20px;
+    margin-right: 0;
+    padding-top: 10px;
+    width:230px;
     border:1px solid #ccc;
     border-collapse: collapse;
+    line-height: 2;
   }
 
   &__profitem {
-    font-size: 18px;
+    display: table-row;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
     span, div {
-      padding: 15px 20px;
+      font-weight: bold;
+      padding: 10px;
+    }
+    &:hover {
+      .wcalc__profdescription {
+        display: block;
+        .wcalc__blitz {
+          li:nth-child(1) span {
+            animation-name: profmark-7;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+          }
+          li:nth-child(2) span {
+            animation-name: profmark-7;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+          }
+          li:nth-child(3) span {
+            animation-name: profmark-8;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+          }
+        }
+        .wcalc__delight {
+          li:nth-child(1) span {
+            animation-name: profmark-8;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+          }
+          li:nth-child(2) span {
+            animation-name: profmark-9;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+          }
+          li:nth-child(3) span {
+            animation-name: profmark-8;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+          }
+        }
+        .wcalc__brillant {
+          li:nth-child(1) span {
+            animation-name: profmark-9;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+          }
+          li:nth-child(2) span {
+            animation-name: profmark-10;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+          }
+          li:nth-child(3) span {
+            animation-name: profmark-9;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+          }
+        }
+        .wcalc__geneo {
+          li:nth-child(1) span {
+            animation-name: profmark-10;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+          }
+          li:nth-child(2) span {
+            animation-name: profmark-10;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+          }
+          li:nth-child(3) span {
+            animation-name: profmark-10;
+            animation-duration: .5s;
+            animation-iteration-count: 1;
+          }
+        }
+      }
     }
   }
 
   &__description-call {
+    font-weight: lighter !important;
+    font-size: 14px;
+    color: #9496AB;
+    text-align: right;
+    &:hover {
+      color: #fff;
+    }
+
+  }
+
+  &__profdescription {
+    display: none;
+    padding:20px !important;
+    position: absolute;
+    background-color: #fff;
+    width: 300px;
+    left:-300px;
+    top: -1px;
+    border:1px solid #ccc;
+    z-index: 3;
+    font-size: 14px;
+    font-weight: normal !important;
+    ul {
+      padding-top: 10px;
+    }
+  }
+
+  &__profmarks {
     display: inline-block;
+    padding: 0 !important;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 12px;
+      li {
+        position: relative;
+        height: 25px;
+        border:1px solid #ccc;
+        margin:10px 0;
+        padding-left: 10px;
+        width: 100%;
+        color: #fff;
+        line-height: 2;
+        span {
+          position: absolute;
+          display: block;
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          top: 0;
+          left: 0;
+          text-align: justify;
+          overflow: hidden;
+          z-index: -1;
+        }
+        &:nth-child(1) {
+          span {
+            background:#f39c12;
+          }
+        }
+        &:nth-child(2) {
+          span {
+            background:#2ecc71;
+          }
+        }
+        &:nth-child(3) {
+          span {
+            background:#3498db;
+          }
+        }
+      }
+    }
+  }
+
+  &__blitz {
+    li {
+      overflow: hidden;
+      &:nth-child(1) {
+        span {
+          width: 70%;
+        }
+      }
+      &:nth-child(2) {
+        span {
+          width: 70%;
+        }
+      }
+      &:nth-child(3) {
+        span {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  &__delight {
+    overflow: hidden;
+    li {
+      &:nth-child(1) {
+        span {
+          width: 80%;
+        }
+      }
+      &:nth-child(2) {
+        span {
+          width: 90%;
+        }
+      }
+      &:nth-child(3) {
+        span {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  &__brillant {
+    overflow: hidden;
+    li {
+      &:nth-child(1) {
+        span {
+          width: 90%;
+        }
+      }
+      &:nth-child(2) {
+        span {
+          width: 100%;
+        }
+      }
+      &:nth-child(3) {
+        span {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  &__geneo {
+    overflow: hidden;
+    li {
+      &:nth-child(1) {
+        span {
+          width: 100%;
+        }
+      }
+      &:nth-child(2) {
+        span {
+          width: 100%;
+        }
+      }
+      &:nth-child(3) {
+        span {
+          width: 100%;
+        }
+      }
+    }
   }
 
 }
@@ -237,6 +478,29 @@ h1 {
   &--orange {
     color: #FAAA24;
   }
+}
+
+.back-hover {
+    &--grey {
+      &:hover {
+        background-color: #9496AB;
+      }
+    }
+    &--blue {
+      &:hover {
+        background-color: #06B8F8;
+      }
+    }
+    &--green {
+      &:hover {
+        background-color: #B9D442;
+      }
+    }
+    &--orange {
+      &:hover {
+        background-color: #FAAA24;
+      }
+    }
 }
 
 .effect {
@@ -323,6 +587,29 @@ h1 {
     100% {transform: perspective(800px) rotateX(0deg);}
 }
 
+// keyframes for .prof-marks
+
+@keyframes profmark-7 {
+  from {width:0;}
+  to {width:70%;}
+}
+
+@keyframes profmark-8 {
+  from {width:0;}
+  to {width:80%;}
+}
+
+@keyframes profmark-9 {
+  from {width:0;}
+  to {width:90%;}
+}
+
+@keyframes profmark-10 {
+  from {width:0;}
+  to {width:100%;}
+}
+
+// custom styles for ruler-sliders
 
 #sliderVone, #sliderVtwo {
   height: 340px;
